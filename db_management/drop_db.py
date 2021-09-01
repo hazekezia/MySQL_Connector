@@ -1,10 +1,7 @@
+from connecting import connecting_db
 import mysql.connector
 
-db = mysql.connector.connect(
-  host="127.0.0.1",
-  user="root",
-  passwd=""
-)
+db = connecting_db()
 
 cursor = db.cursor()
 database_input = input("Masukkan nama database : ")
