@@ -1,13 +1,9 @@
 import mysql.connector
+import sys
+sys.path.insert(0, "../MySQL Python Connector")
+from connecting import connecting_db1
 
-# database = input("Nama database : ")
-
-db = mysql.connector.connect(
-  host="127.0.0.1",
-  user="root",
-  passwd="",
-  database= "uwu"
-)
+db = connecting_db1()
 
 cursor = db.cursor()
 
