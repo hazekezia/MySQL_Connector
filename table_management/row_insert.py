@@ -11,8 +11,7 @@ cursor = db.cursor()
 # INSERT INTO <nama tabel> (<nama, kolum)>) VALUES (%s, %s, %s)
 SQLCommand = "INSERT INTO api_test (name, harga) VALUES (%s, %s)"
 Data = [
-    ("Jonathan", "20000"),
-    ("Alexander", "30000")
+    ("Jonathan", "20000")
 ]
 
 for value in Data:

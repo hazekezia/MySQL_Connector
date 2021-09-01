@@ -9,9 +9,10 @@ cursor = db.cursor()
 
 # UPDATE <nama tabel> SET <nama kolom=%s> WHERE <id = %s>
 SQLCommand = "UPDATE api_test SET name=%s, harga=%s WHERE id=%s"
-value = ("Alex", "29000", 1)
+value = ("Alex", "29000", 4)
 
 cursor.execute(SQLCommand, value)
 db.commit()
 
-print("{} data diubah".format(cursor.rowcount))
+# print("{} data diubah".format(cursor.rowcount))
+print("Changed.")
