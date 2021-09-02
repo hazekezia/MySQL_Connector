@@ -13,6 +13,6 @@ def connecting_db1():
     host="127.0.0.1",
     user="root",
     passwd="",
-    database="hazekezia"
+    database="checking"
   )
   return db

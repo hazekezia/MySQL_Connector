@@ -8,7 +8,7 @@ db = connecting_db1()
 cursor = db.cursor()
 
 #Select * FROM <nama table>
-SQLCommand = "SELECT * FROM api_test"
+SQLCommand = "SELECT * FROM karyawan"
 cursor.execute(SQLCommand)
 
 # fetchall() -> ambil semua data

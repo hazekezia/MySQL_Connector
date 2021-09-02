@@ -13,10 +13,12 @@ cursor = db.cursor()
 #   name VARCHAR(255),
 # )
 
-SQLCommand = """CREATE TABLE api_test (
+SQLCommand = """CREATE TABLE karyawan (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255),
-  harga VARCHAR(255)
+  nama VARCHAR(255) NOT NULL,
+  email VARCHAR(30) NOT NULL,
+  umur VARCHAR(2) NOT NULL,
+  gaji VARCHAR(10) NOT NULL
 )
 """
 cursor.execute(SQLCommand)
