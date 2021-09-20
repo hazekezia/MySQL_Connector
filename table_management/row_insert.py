@@ -9,12 +9,10 @@ cursor = db.cursor()
 
 # Isi command SQL disini
 # INSERT INTO <nama tabel> (<nama, kolum)>) VALUES (%s, %s, %s)
-SQLCommand = "INSERT INTO karyawan (nama, email, umur, gaji) VALUES (%s, %s, %s, %s)"
+SQLCommand = "INSERT INTO two (id_two, umur) VALUES (%s, %s)"
 Data = [
-    ("Jonathan Sitohang", "uwu@gmail.com", "20", "1000000"),
-    ("Jonathan Situmorang", "uwu4@gmail.com", "24", "2000000"),
-    ("Jonathan Siahaan", "uwu3@gmail.com", "21", "3500000"),
-    ("Jonathan Simajuntak", "uwu5@gmail.com", "19", "900000")
+    (1, "23"),
+    (2, "24")
 ]
 
 for value in Data:
