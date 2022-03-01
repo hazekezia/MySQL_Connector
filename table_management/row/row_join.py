@@ -1,14 +1,14 @@
 import sys
 sys.path.insert(0, "../MySQL Python Connector")
-from connecting import connecting_db1
+from connecting import connecting_db
 
-db = connecting_db1()
+db = connecting_db()
 cursor = db.cursor()
 
 SQLCommand = """SELECT *
-    FROM one
-    INNER JOIN two
-    ON one.umur = two.umur;
+    FROM nama_table
+    INNER JOIN nama_table2
+    ON nama_table.id = nama_table2.id;
 """
 cursor.execute(SQLCommand)
 

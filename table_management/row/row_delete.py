@@ -1,14 +1,14 @@
 import mysql.connector
 import sys
 sys.path.insert(0, "../MySQL Python Connector")
-from connecting import connecting_db1
+from connecting import connecting_db
 
-db = connecting_db1()
+db = connecting_db()
 
 cursor = db.cursor()
 
 # DELETE FROM <nama tabel> WHERE <id = %s>
-SQLCommand = "DELETE FROM api_test WHERE id=%s"
+SQLCommand = "DELETE FROM nama_table WHERE id=%s"
 value = (6,)
 
 cursor.execute(SQLCommand, value)
